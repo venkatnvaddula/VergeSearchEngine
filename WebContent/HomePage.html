@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<title>Search System</title>
+</head>
+<body>
+	
+<style>
+.submit{
+	background-color: #FFA500; 
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+.submit2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+h1{  
+	position: fixed;
+  	top: 30%;
+  	left: 50%;
+  	/* bring your own prefixes */
+  	transform: translate(-50%, -50%);
+  }
+  form{
+  	position: fixed;
+  	top: 40%;
+  	left: 50%;
+  	/* bring your own prefixes */
+  	transform: translate(-50%, -50%);
+  }
+  mytext{
+  	width: 300px;
+  }
+</style>
+<header>
+<h1><span class="blue-text">Maverick Search System</span></h1>
+</header>	
+<form class="form" name="input" method="GET" action="/DemoIR/HomeServlet">
+<label class="control-label"><strong>Input Query:</strong></label> 
+<input type='text'  name='inputtext' class="mytext" size="35">
+<input type='submit'  value='Search' class="submit submit2"><br>
+</form>
+</body>
+</html>
